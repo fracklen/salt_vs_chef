@@ -1,0 +1,97 @@
+\subsection{SaltStack}
+\frame
+{
+  \frametitle{SaltStack}
+
+  \begin{center}%
+    \includegraphics[height=6cm]{images/saltstack_logo.jpg}
+  \end{center}%
+}
+
+\frame
+{
+  \frametitle{Buzzwords}
+  \begin{itemize}
+  \item<1-> ZeroMQ
+  \item<2-> Event Based
+  \item<3-> Python
+  \item<4-> Remote Execution
+  \end{itemize}
+}
+
+\subsection{Core Concepts}
+\frame
+{
+  \frametitle{Core Concepts}
+  \begin{itemize}
+  \item<1-> Master/Minion/Syndic
+  \item<2-> PKI
+  \item<3-> States
+  \item<4-> Grains
+  \item<5-> Pillars
+  \item<6-> Beacons/Reactors
+  \item<7-> Returners/Outputters
+  \end{itemize}
+}
+
+\subsection{First taste}
+\frame
+{
+  \frametitle{Learning Salt}
+  \begin{itemize}
+  \item<1-> Master: Install 'salt-master'
+  \item<2-> Minion: Install 'salt-minion'
+  \item<3-> Minion: Point to master ip
+  \item<4-> Minion: Restart 'salt-minion'
+  \item<5-> Master: Accept minion with 'salt-key'
+  \end{itemize}
+}
+
+\frame
+{
+  \frametitle{Ping all}
+
+  \begin{center}%
+    \includegraphics[height=3cm]{images/salt_ping.png}
+  \end{center}%
+}
+
+\subsection{Instant execution}
+\frame
+{
+  \frametitle{Instant execution}
+
+  \begin{center}%
+    \includegraphics[height=3cm]{images/salt_cmd.png}
+  \end{center}%
+}
+
+\frame
+{
+  \frametitle{Instant execution - Dev perspective}
+
+  \begin{center}%
+    \includegraphics[height=6cm]{images/unlimited_power.png}
+  \end{center}%
+}
+
+\frame
+{
+  \frametitle{Instant execution - Ops perspective}
+
+  \begin{itemize}
+  \item<1-> sudo salt '*' cmd.run 'rm -rf /'
+  \item<2-> sudo salt '*' cmd.run 'poweroff -f'
+  \end{itemize}
+}
+
+\frame
+{
+  \frametitle{Instant execution - Ops perspective}
+
+  \begin{center}%
+    \includegraphics[height=6cm]{images/accident.png}
+  \end{center}%
+}
+
+
