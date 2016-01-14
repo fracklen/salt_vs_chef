@@ -2,15 +2,29 @@
 
  \usepackage{beamerthemesplit}
 
-\title{Chef vs Salt}
+\title{Chef vs. Salt}
 \author{Martin Neiiendam}
 \date{\today}
 
 \begin{document}
 
-\frame{\titlepage}
+\titlegraphic{
+  \includegraphics[height=2cm]{images/chef.png}
+  \includegraphics[height=2cm]{images/salt.jpg}
+}
 
-\section[Outline]{}
+\frame{
+\titlepage
+}
+
+\frame{
+  \begin{itemize}
+    \item Martin Neiiendam
+    \item Lokalebasen.dk
+    \item Chef vs. SaltStack
+  \end{itemize}
+}
+
 \frame{\tableofcontents}
 
 \section{Introduction}
@@ -19,10 +33,14 @@
 \section{Chef}
 \input{includes/chef.tex}
 
-\section{SaltStack - Introduction}
+\section{SaltStack}
 \input{includes/salt.tex}
-
-\section{SaltStack - State}
 \input{includes/salt_state.tex}
+
+\section{Mix}
+\input{includes/mix.tex}
+
+\section{Discussion}
+\input{includes/discussion.tex}
 
 \end{document}
